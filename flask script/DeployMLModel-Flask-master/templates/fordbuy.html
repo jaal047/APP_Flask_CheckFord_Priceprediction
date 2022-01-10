@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CHECKFORD</title>
+        <!-- Favicon-->   
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" /> 
+    </head>   
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">  
+                <a class="navbar-brand" href="{{url_for('home')}}">CHECKFORD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('dashboard')}}">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('fordbuy')}}">FordBuy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('fordsell')}}">FordSell</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('tim')}}">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead2">
+            <div class="container">
+                <div class="text-center">
+                    <h1>Mari Beli Mobil Keinginanmu Dengan Harga Terjangkau Disini</h1>
+                </div>
+            </div>
+        </header>
+        
+        
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">SHOWROOM FORDBUY</h2>
+                    <h3 class="section-subheading text-muted">Galeri Mobil Ford Bekas</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD B-MAX.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">B-MAX</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$82878</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD C-MAX.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">C-MAX</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$10881</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD ECOSPORT.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">ECOSPORT</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$3000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD EDGE.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">EDGE</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$228101</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD ESCORT.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">ESCORT</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$12500</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD FIESTA.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">FIESTA</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$10197</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD FOCUS.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">FOCUS</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$13185</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD FUSION.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">FUSION</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$2555</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD GALAXY.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">GALAXY</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$17841</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD GRAND C-MAX.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">GRAND C-MAX</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$10881</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal11">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD GRAND TOURNEO CONNECT.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">GRAND TOURNEO C</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$14874</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal12">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD KA.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">KA</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$5186</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1--> 
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal13">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD KA+.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">KA+</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$8707</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal14">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD KUGA.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">KUGA</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$15824</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal15">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD MONDEO.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">MONDEO</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$12306</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal16">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD MUSTANG.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">MUSTANG</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$34632</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal17">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD PUMA.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">PUMA</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$21448</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal18">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD RANGER.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">RANGER</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$14495</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal19">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD S-MAX.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">S-MAX</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$17721</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal20">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD STREETKA.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">STREETKA</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$1925</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal21">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD TOURNEO CONNECT.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">TOURNEO CONNECT</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$13806</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal22">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD TOURNEO CUSTOM.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">TOURNEO CUSTOM</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$21166</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal23">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-cart-plus fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='img/car/FORD TRANSIT TOURNEO.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">TRANSIT TOURNEO</div><br>
+                                <div class="portfolio-caption-subheading text-muted">$12450</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">&copy; KELOMPOK 5 ALGORITMA PEMOGRAMAN II</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/ford"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.twitter.com/Ford"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/ford-motor-company"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content"> 
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford B-Max</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD B-MAX.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Nama kode Ford B-Max (ditulis sebagai Ford B-MAX): B232, adalah mini MPV (M-segment) yang diproduksi oleh Ford Eropa dari 2012 hingga 2017. Dibangun di atas platform Ford global B, mobil ini awalnya diluncurkan sebagai mobil konsep di Geneva Motor Show 2011, dan secara resmi diluncurkan pada Mobile World Congress 2012 di Barcelona. Produksi dimulai pada Juni 2012, dan pemasaran unit pertama dimulai pada akhir Juli. Diluncurkan di Inggris pada 1 September 2012. B-Max didasarkan pada Ford Fiesta, dan saingan utamanya adalah Fiat 500L, Citroën C3 Picasso dan Nissan Note.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            28131,74
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,32
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            55,68
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}"" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford C-Max</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD C-MAX.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford C-Max (ditulis sebagai Ford C-MAX dan sebelumnya disebut Ford Focus C-Max) adalah kendaraan serbaguna (MPV) kompak yang diproduksi oleh Ford Motor Company dari tahun 2003 hingga 2019. Ford Grand C-Max telah jarak sumbu roda yang lebih panjang. Ford memperkenalkan C-Max di Amerika Serikat sebagai lini kendaraan hybrid-only pertamanya, yang mencakup C-Max Hybrid, dirilis pada September 2012, dan plug-in hybrid C-Max Energi, diluncurkan pada Oktober 2012. Meskipun C-Max awalnya hanya tersedia di Eropa, generasi pertama sebagian tersedia di Selandia Baru.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            28456,98
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,41
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            59,51
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford Ecosport</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD ECOSPORT.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford EcoSport (diucapkan EE-koh-sport) adalah SUV crossover subkompak, awalnya dibangun di Brasil oleh Ford Brasil sejak 2003, di pabrik Camaçari. Model konsep generasi kedua diluncurkan pada 2012, dan juga dirakit di pabrik baru di India, Thailand, Rusia, dan Rumania. Kendaraan ini memasuki pasar Amerika Utara untuk pertama kalinya pada 2018.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            16469,81
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,11
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            53,09
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford Edge</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD EDGE.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Edge adalah jajaran SUV crossover yang diproduksi oleh Ford Motor Company. Diperkenalkan untuk model tahun 2007, Edge adalah CUV ukuran menengah pertama yang dipasarkan oleh Ford di Amerika Utara; lini model saat ini dalam generasi kedua. Mengambil namanya dari paket trim Ford Ranger, Ford Edge diposisikan di antara Ford Escape dan Ford Explorer dalam lini produk Ford. Berbagi fondasinya dengan sedan Ford Fusion, Ford juga memproduksi lini model sebagai Lincoln MKX (sejak 2019, Lincoln Nautilus); generasi pertama juga diproduksi sebagai Mazda CX-9. Generasi kedua juga dipasarkan oleh Ford Eropa, diposisikan di antara Kuga (Escape) dan Explorer PHEV. Semua produksi Ford Edge bersumber dari Ford Kanada di Oakville Assembly (Oakville, Ontario) di samping Nautilus.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            21769,50
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            2
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            46,15
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford Escort</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD ESCORT.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Escort adalah mobil keluarga kecil yang diproduksi oleh Ford Eropa dari tahun 1968 sampai 2000. Escort sering menjadi mobil terlaris di Inggris selama tahun 1980-an dan 1990-an. Total lebih dari 4,1 juta Escort dari semua generasi dijual di sana selama 33 tahun. Pada tahun 2014, Ford menghidupkan kembali nama Escort untuk mobil yang didasarkan pada Ford Focus generasi kedua yang dijual di pasar Cina.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            50000
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,8
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            34,4
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford Fiesta</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD FIESTA.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Fiesta adalah mobil supermini yang dipasarkan Ford sejak 1976 selama tujuh generasi. Selama bertahun-tahun, Fiesta sebagian besar telah dikembangkan dan diproduksi oleh operasi Ford Eropa, dan telah diposisikan di bawah Escort (kemudian Focus). Pada tahun 2008, Fiesta generasi keenam (Mark VI) diperkenalkan di seluruh dunia, menjadikannya model Fiesta pertama yang dijual di Amerika Serikat sejak Fiesta Mark I dihentikan pada akhir 1980. Ford telah menjual lebih dari 16 juta Fiesta sejak 1976 , menjadikannya salah satu merek Ford terlaris di belakang Escort dan F-Series. Ini telah diproduksi di Inggris, Jerman, Spanyol, Brasil, Argentina, Venezuela, Meksiko, Taiwan, Cina, India, Thailand, dan Afrika Selatan.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            21679,12
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,1
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            60,98
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 7 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford Focus</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD FOCUS.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Focus adalah mobil kompak (segmen C di Eropa) yang diproduksi oleh Ford Motor Company dan dibuat berdasarkan rencana Ford 2000 Alexander Trotman, yang bertujuan untuk mengglobalkan pengembangan model dan menjual satu kendaraan kompak di seluruh dunia. Focus asli terutama dirancang oleh tim Jerman dan Inggris Ford Eropa. Focus dirilis pada Juli 1998 di Eropa, menggantikan Ford Escort, dan menggantikan Ford Laser yang diturunkan dari Mazda Familia di Asia dan Oceania bersama dengan Escort Amerika Utara yang berbasis Laser. Wayne Stamping & Assembly mulai memproduksi Focus untuk Amerika Utara dengan penjualan dimulai pada 1999. Focus terakhir yang diproduksi di Amerika Utara diluncurkan di Michigan Assembly Plant pada 4 Mei 2018. Produksi Focus generasi keempat dimulai pada 2018 di Jerman dan di Cina.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            23735,27
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,36
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            60,09
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 8 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford Fusion</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD FUSION.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Fusion adalah mobil ukuran sedang yang diproduksi dan dipasarkan oleh Ford Motor Company. Dari model tahun 2006 hingga 2020, dua generasi Fusion telah diproduksi dalam varian bensin, hibrida gas/listrik, dan hibrida gas/plug-in. Fusion diproduksi di pabrik Ford's Hermosillo Stamping and Assembly di Sonora, Meksiko, bersama dengan varian rebadged Lincoln MKZ, dan sebelumnya Mercury Milan, keduanya berbagi platform CD3.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            65888,81
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,49
+                                        <li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            45,39
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 9 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ford Galaxy</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD GALAXY.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Galaxy adalah kendaraan serbaguna (MPV) besar yang diproduksi oleh Ford Eropa sejak Juni 1995. MPV merek Ford pertama yang diproduksi dan dipasarkan di luar Amerika Utara, lini modelnya saat ini memasuki generasi ketiga. Berbagi arsitektur platformnya dengan Ford Mondeo, Galaxy dikembangkan bersama Ford S-MAX; garis model ditempatkan di antara varian Connect dan Custom dari keluarga model Ford Tourneo/Transit. Berbeda dengan Ford Aerostar dan Chrysler Voyager rancangan Amerika (keduanya diimpor ke Eropa), Galaxy dikonfigurasikan dengan empat pintu bergaya sedan (sejajar dengan Renault Espace).</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            32994,96
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,98
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            53,35
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 10 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">  
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/car/FORD GRAND C-MAX.png')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Grand C-Max</h2>
+                                    <img class="img-fluid d-block mx-auto" src="static/img/portfolio/4.jpg" alt="..." />
+                                    <p style="text-align:justify;">Desain sederhana Grand C-Max berhasil dengan mudah menggabungkan ukurannya dan menyamarkan kapasitas penyimpanannya yang luar biasa. Ini juga berbagi wajah yang identik dengan sisa formasi Ford, seperti Fiesta, Focus dan Mondeo - desain kap berukir menyapu hidung seperti Aston Martin dan lampu depan yang halus. Masuk dan keluar ke bagian belakang mobil diberikan oleh pintu geser besar di kedua sisi dan belakang bulat, bak truk bermotor membuat memuat bagasi lebih mudah, terutama jika Anda memiliki anak di tangan Anda.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            27882,66
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,41
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            58,37
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 11 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Grand Tourneo C</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD GRAND TOURNEO CONNECT.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Grand Tourneo Connect (facelift 2018) 1.5 EcoBlue (120 Cv) S S 2018 adalah model mobil yang dibuat oleh perusahaan Ford dan termasuk dalam seri Tourneo Connect yang mencakup model perpindahan dan tahun yang berbeda. Kendaraan khusus ini memiliki 5/7-seater dan 5 pintu dan itu adalah mobil penggerak roda depan. Untuk membuat spesifikasi lebih konkret dari Minivan cantik ini, beri tahu Anda bahwa memiliki mesin diesel 1.5 EcoBlue (120 Cv) S&S dengan perpindahan nyata 1499 c.c. (91,47 i.c.) dan tenaga 120 (hp) tenaga kuda pada 3600 rpm. Mobil ini termasuk dalam kategori Minivan dan model pertama Tourneo Connect ini disebarluaskan pada tahun 2018, makanya kita berada di depan Ford yang sudah 3 tahun. Di sini Anda dapat melihat semua spesifikasi dan lembar teknis dan data dari mobil yang luar biasa ini.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            23602,39
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,51
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            60,17
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 12 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">KA</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD KA.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Ka adalah mobil kecil yang diproduksi oleh Ford Motor Company dari tahun 1996 hingga 2016 sebagai city car dan dari 2016 dan seterusnya sebagai mobil subkompak. Ini memasuki generasi kedua pada tahun 2008, diproduksi oleh Fiat di Tychy, Polandia. Generasi ketiga diperkenalkan pada 2016. Dua generasi pertama memiliki gaya bodi hatchback tiga pintu, dengan generasi pertama juga memiliki versi convertible dua pintu yang dipasarkan sebagai StreetKa dan versi hatchback sporty, SportKa. Generasi ketiga diproduksi sebagai hatchback lima pintu dan sebagai sedan empat pintu. Awalnya hanya tersedia di Brasil, kemudian diperkenalkan di India, Italia, Meksiko, Spanyol, Afrika Selatan (di mana dipasarkan sebagai Ford Figo), Argentina dan Polandia. Penjualan Eropa berakhir pada 2020 dan pada 2021 dikeluarkan dari produksi di Brasil.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            35604,57
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,17
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            56,09
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 13 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">KA+</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD KA+.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ka+ lima pintu lebih panjang dari Ka sebelumnya, jadi kepraktisan adalah nilai jual yang besar berkat ruang kaki depan dan belakang yang mengesankan. Sebuah boot 270 liter hampir cocok untuk Fiesta dan Ford telah menjejalkan interior dengan 21 cubbyholes. Ka+ didasarkan pada Ford Figo, yang dijual di India, tetapi pengaturan suspensi telah berhasil dirombak untuk jalanan Inggris dan penyesuaian pada bodi membantu mengurangi kebisingan angin. Ban dengan ketahanan gelinding rendah dan regenerasi gaya rem juga membantu mengurangi biaya bahan bakar. Ka+ ditenagai oleh mesin bensin 1,2 liter yang ditawarkan dalam dua kondisi – dengan 69hp atau 84hp. Keduanya mencapai penghematan bahan bakar sekitar 56mpg meskipun mesin yang lebih bertenaga lebih baik jika Anda sering bepergian di jalan raya. Ka+ hadir dalam dua level trim dan bahkan model dasar dilengkapi dengan jendela depan elektrik dan kaca spion, konektivitas Bluetooth, enam airbag, dan penguncian sentral jarak jauh.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            11602,27
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,19
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            53,32
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 14 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Kuga</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD KUGA.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Kuga adalah kendaraan SUV kompak yang diproduksi oleh Ford sejak 2007. Mobil ini mengambil basis dari C1 Platform, yang juga digunakan pada Ford Focus dan Ford C-MAX.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            23707,50
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,80
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            51,67
+                                        </li>
+                                        
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 15 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Mondeo</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD MONDEO.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Mondeo adalah mobil keluarga besar yang diproduksi Ford Motor Company sejak 1992 sampai sekarang. Nama Mondeo berasal dari bahasa Latin mundus, artinya "dunia".Di Amerika Utara Mondeo dijual dengan nama Ford Contour dan Mercury Mystique sampai tahun 2000, dan sebagai Ford Fusion tahun 2013 sampai sekarang.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            45834,73
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,89
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            60,03
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 16 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Mustang</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD MUSTANG.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Mustang adalah mobil sport coupe yang diproduksi oleh Ford Motor Company di Amerika Serikat dari tahun 1964 sampai sekarang. Mobil ini pada awalnya diambil dari Ford Falcon generasi kedua.Diperkenalkan tanggal 17 April 1964, pada tahun 1965 Mustang mencatatkan diri sebagai mobil tersukses Ford setelah Model A.Saat ini, Mustang telah mencapai generasi kelimanya.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            9480,14
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            4,38
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            24,27
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 17 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Puma</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD PUMA.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Puma merupakan SUV crossover subkompak (B-segment) yang dipasarkan Ford sejak 2019. Ia dianggap sebagai SUV yang setara dengan Fiesta generasi ketujuh. Kendaraan ini hanya tersedia untuk pasar Eropa dan Australasia, dengan penjualan dimulai di Eropa mulai 2019 dan penjualan di Australasia mulai akhir 2020. Di pasar Eropa, Puma diposisikan di atas EcoSport dan di bawah Kuga (juga disebut Escape outside Europe).</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            3839,88
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,00
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            50,13
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 18 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ranger</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD RANGER.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Ranger adalah kendaraan jenis truk pikap buatan Ford Motor Company. Awalnya, nama ini digunakan pada Edsel Ranger, kemudian digunakan kembali tahun 1982. Sejak 1998 Ford juga menjual versi lain dari Ranger yang dijual internasional.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            88000
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            3,2
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            28,3
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 19 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">S-MAX</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD S-MAX.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford S-Max (ditulis sebagai Ford S-MAX) adalah MPV yang diproduksi Ford Motor Company untuk pasar Eropa. S-Max diperkenalkan di Geneva Motor Show 2006, S-Max dijual berbarengan dengan Galaxy generasi terbaru. S-Max banyak menerima respon positif dan masuk dalam nominasi European Car of the Year 2007.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            31896,28
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,95
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            51,90
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 20 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Streetka</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD STREETKA.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Streetka adalah model mobil yang dibuat oleh pabrikan mobil Ford. The Roadster , yang dibuat oleh perusahaan Italia Pininfarina , datang ke pasar Jerman pada Mei 2003. Itu adalah dua tempat duduk dengan tudung kain. Dari tahun 2004 mobil ini tersedia dengan hardtop sebagai alternatif.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            68527,5
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,6
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            35,55
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 21 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Tourneo Connect</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD TOURNEO CONNECT.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Transit Connect atau Tourneo Connect adalah MPV kompak yang diproduksi oleh Ford Eropa. Generasi pertama didesain oleh Peter Horbury dan diperkenalkan tahun 2002 untuk menggantikan Ford Escort dan Courier berbasis Fiesta.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            24458,30
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            1,49
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            58,14
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 22 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal22" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Tourneo Custom</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD TOURNEO CUSTOM.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Tourneo Custom 2018 adalah minivan ukuran sedang. Unit daya memiliki susunan memanjang. Kabin memiliki empat atau lima pintu dan sembilan kursi. Mobil itu dibedakan dengan kehadiran sejumlah besar asisten elektronik, nyaman di kabin. Model ini adalah yang paling mahal di lini karena kualitas bahan finishing dan pengerjaan. Mari kita lihat lebih dekat karakteristik teknis, peralatan, dan dimensi model.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            21791,35
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            2
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            38,61
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 23 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal23" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Transit Tourneo</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/car/FORD TRANSIT TOURNEO.png')}}" alt="..." />
+                                    <p style="text-align:justify;">Ford Transit adalah kendaraan komersial ringan yang diproduksi Ford Motor Company sejak 1965. Awalnya hanya tersedia dalam versi van kargo, Transit juga dibuat versi penumpangnya. Lebih dari 7 juta unit Transit telah terjual sepanjang 4 generasinya.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Jarak Tempuh:</strong>
+                                            19496
+                                        </li>
+                                        <li>
+                                            <strong>Ukuran Mesin:</strong>
+                                            2,2
+                                        </li>
+                                        <li>
+                                            <strong>MPG:</strong>
+                                            42,2
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Kembali
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+
+        
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
